@@ -37,7 +37,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/jobAd", jobAdRoutes);
 
 app.get("/", (request, response) => {
-    response.send("Hello World...");
+    response.send("Hello World... cookie..");
 });
 
 
