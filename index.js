@@ -14,8 +14,8 @@ const app = express();
 app.use(cookieParser())
 dotenv.config();
 app.use(cors({
-    origin: 'http://localhost:3000',
-    credentials: "true"
+    origin: '*',
+    credentials: true
 }));
 // app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -38,7 +38,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/jobAd", jobAdRoutes);
 
 app.get("/", (request, response) => {
-    response.send("Hello World... cookie..credential..==>> rogin/");
+    response.send("Hello World... cookie..credential..==>> rog");
 });
 
 
