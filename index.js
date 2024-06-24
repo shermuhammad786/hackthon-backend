@@ -5,12 +5,13 @@ import { rateLimit } from 'express-rate-limit'
 import { connectDB } from "./config/default.js";
 import { authRoutes } from "./routes/auth.js";
 import { jobAdRoutes } from "./routes/jobAd.js";
+import cookieParser from "cookie-parser";
 import './cronJob.js'
 
 const PORT = 5000;
 
 const app = express();
-
+app.use(cookieParser())
 dotenv.config();
 app.use(cors({
     origin: '*'
