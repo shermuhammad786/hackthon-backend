@@ -11,12 +11,13 @@ import './cronJob.js'
 const PORT = 5000;
 
 const app = express();
-app.use(cookieParser())
 dotenv.config();
 app.use(cors({
     origin: '*',
     credentials: true
 }));
+
+app.use(cookieParser())
 // app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -38,7 +39,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/jobAd", jobAdRoutes);
 
 app.get("/", (request, response) => {
-    response.send("Hello World... cookie..credential..==>> rog");
+    response.send("Hello World... cookie..credential..==>> rog headres");
 });
 
 
