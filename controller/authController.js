@@ -87,7 +87,7 @@ export const signUp = async (req, res) => {
 
                         // sendEmail()
                         const emailResponse = await sendEmailOTP(email, otp);
-                        res.cookie("access_token", token, { Credential: "true" });
+                        res.cookie("access_token", token);
                         return res.status(CREATED).send(
                             sendSuccess({
                                 status: true,
