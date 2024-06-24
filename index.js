@@ -32,7 +32,7 @@ connectDB();
 // })
 
 // Apply the rate limiting middleware to all requests.
-app.use(limiter)
+// app.use(limiter)
 
 app.use("/api/auth", authRoutes);
 app.use("/api/jobAd", jobAdRoutes);
