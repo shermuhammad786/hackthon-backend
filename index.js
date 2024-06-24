@@ -14,7 +14,7 @@ const app = express();
 app.use(cookieParser())
 dotenv.config();
 app.use(cors({
-    origin: '*',
+    origin: 'https://hackthon-backend.vercel.app/',
     credentials: true
 }));
 // app.use(express.urlencoded({ extended: true }));
