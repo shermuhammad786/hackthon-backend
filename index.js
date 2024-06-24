@@ -14,7 +14,7 @@ const app = express();
 app.use(cookieParser())
 dotenv.config();
 app.use(cors({
-    origin: 'https://hackthon-backend.vercel.app/',
+    origin: '*',
     credentials: true
 }));
 // app.use(express.urlencoded({ extended: true }));
@@ -38,7 +38,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/jobAd", jobAdRoutes);
 
 app.get("/", (request, response) => {
-    response.send("Hello World... cookie..credential");
+    response.send("Hello World... cookie..credential...rigin");
 });
 
 
