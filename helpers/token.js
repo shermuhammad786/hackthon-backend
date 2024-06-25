@@ -25,7 +25,7 @@ export const ValidateToken = ({ token, key }) => {
 
 
 export const validateToken = async (req, res, next) => {
-console.log(JWT_SECRET_KEY, "secrteate key jewt")
+    console.log(JWT_SECRET_KEY, "secrteate key jewt")
     // console.log(JWT_SECRET_KEY, "====>> JWT SECRET KEY")
     let token;
     // console.log(req.headers, "===>>> request. headers")
