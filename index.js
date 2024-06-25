@@ -13,7 +13,7 @@ const PORT = 5000;
 const app = express();
 dotenv.config();
 app.use(cors({
-    origin: '*',
+    origin: 'http://localhost:3000',
     credentials: true
 }));
 
@@ -39,7 +39,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/jobAd", jobAdRoutes);
 
 app.get("/", (request, response) => {
-    response.send("Hello World... cookie..credential..==>> rog headres,secure");
+    response.send("Hello World... cookie..credential..==>> orign");
 });
 
 
