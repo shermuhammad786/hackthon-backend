@@ -39,7 +39,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/jobAd", jobAdRoutes);
 
 app.get("/", (request, response) => {
-    response.send("Hello World... cookie..credential..==>> rog headres");
+    response.send("Hello World... cookie..credential..==>> rog headres,secure");
 });
 
 
