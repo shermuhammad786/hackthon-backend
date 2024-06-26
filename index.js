@@ -10,6 +10,7 @@ import './cronJob.js'
 
 const PORT = 5000;
 
+// origin: 'http://localhost:3000',
 const app = express();
 dotenv.config();
 app.use(cors({
