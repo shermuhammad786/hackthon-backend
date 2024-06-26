@@ -14,7 +14,7 @@ const PORT = 5000;
 const app = express();
 dotenv.config();
 app.use(cors({
-    origin: 'https://authentication-eight-drab.vercel.app/',
+    origin: 'https://authentication-eight-drab.vercel.app',
     credentials: true
 }));
 
