@@ -13,7 +13,7 @@ const PORT = 5000;
 const app = express();
 dotenv.config();
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://signup110.netlify.app',
     credentials: true
 }));
 
